@@ -6,9 +6,8 @@ int main() {
 	int x, a, b, c;
 
 
-	printf("¼ýÀÚ ÀÔ·Â : ");
+	printf("number : ");
 	scanf_s("%d", &c);
-	printf("%dÃþ\n", c);
 
 	for (x = 0; x < c; x++) {
 
