@@ -1,35 +1,37 @@
 #include <stdio.h>
 
-void sort(int* p_arr) {
+void Sort(int* p_arr, int size) {
+    int a, f, s, b;
 
-	int f, a, b, c;
-	a = 0;
+    for (a = 0; a < size - 1; a++) {
+       s = a;
 
-	for (a = 0; a < 5 - 1; a++) {
-
-		for (f = a; f < 5; f++) {
-			if (*p_arr[f] < *p_arr[f + 1]) {
-				b = *p_arr[f]
-			}
-			int* num1 = b;
-			int* num2 = *p_arr[a];
-			b = num2;
-			*p_arr[a] = num1;
-		}
-
-	}
-	
+        for (f = a + 1; f < size; f++) {
+            if (p_arr[f] < p_arr[s]) {
+                s = f;
+            }
+        }
+        b = p_arr[a];
+        p_arr[a] = p_arr[s];
+        p_arr[s] = b;
+    }
 }
+
 int main() {
+    int i;
+    int arr[5] = { 5, 4, 1, 2, 3 };
+    int* p_arr = arr;
 
-	int i;
+    for (i = 0; i < 5; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
 
-	int arr[5] = {5,4,1,2,3};
-	int* p_arr = arr[5];
+    Sort(p_arr, 5);
 
-	for (i = 0; i < 5; i++) {
-		printf("%d", arr[i]);
-	}
+    for (i = 0; i < 5; i++) {
+        printf("%d ", arr[i]);
+    }
 
-	return 0;
+    return 0;
 }
