@@ -1,0 +1,5 @@
+﻿  tetris.cpp
+C:\Users\ggms9\OneDrive\바탕 화면\C테트리스\tetris\tetris.cpp(132,5): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\ggms9\OneDrive\바탕 화면\C테트리스\tetris\tetris.cpp(136,5): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\ggms9\OneDrive\바탕 화면\C테트리스\tetris\tetris.cpp(209,3): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  tetris.vcxproj -> C:\Users\ggms9\OneDrive\바탕 화면\C테트리스\tetris\x64\Debug\tetris.exe
